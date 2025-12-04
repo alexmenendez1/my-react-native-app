@@ -1,6 +1,11 @@
 import { View, Text, StyleSheet } from 'react-native';
 import SummaryCard from './SummaryCard';
 import OrdersScreen from './OrdersScreen';
+// import the chart component
+// Use a React Native wrapper for Chart.js
+import { LineChart } from 'react-native-chart-kit';
+import { Dimensions } from 'react-native';
+import Chart from 'react-native-chartjs';
 
 // Dashboard top row of summary cards
 const SummaryRow = () => (
@@ -11,7 +16,8 @@ const SummaryRow = () => (
   </View>
 );
 
-// Main App component
+
+
 export default function App() {
   return (
     <View style={styles.container}>
@@ -86,3 +92,4 @@ const styles = StyleSheet.create({
     color: '#111',
   },
 });
+
